@@ -1,0 +1,93 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: "Rakkas";
+    src: url(./fonts/Rakkas-Regular.ttf);
+}
+@font-face {
+    font-family: "Recoleta";
+    font-weight: 300;
+    src: url(./fonts/Recoleta-RegularDEMO.otf);
+}
+@font-face {
+    font-family: "Rozha";
+    font-weight: 500;
+    src: url(./fonts/RozhaOne-Regular.ttf);
+}
+@font-face {
+    font-family: "Work-Sans";
+    font-weight: 700;
+    src: url(./fonts/WorkSans-Bold.ttf);
+}
+@font-face {
+    font-family: "Work-Sans";
+    font-weight: 500;
+    src: url(./fonts/WorkSans-Medium.ttf);
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    overscroll-behavior-y: none;
+}
+
+h2 {
+    text-align: center;
+    font-size: 8rem;
+    margin: 40px auto;
+}
+
+.App {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+
+}
+
+
+.img-container {
+    width: 700px;
+    height: 420px;
+    overflow: hidden;
+    position: relative;
+    margin: 400px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    width: 100%;
+    position: absolute;
+}
+
+
+.marquee__part {
+    flex-shrink: 0;
+    padding: 0 4px;
+}
+
+.marquee {
+    padding: 32px 0;
+
+    position: relative;
+    overflow: hidden;
+}
+
+.marquee__inner {
+    -webkit-font-smoothing: antialiased;
+    width: fit-content;
+    display: flex;
+    flex: auto;
+    flex-direction: row;
+}
+
+
