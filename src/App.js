@@ -4,8 +4,11 @@ import useWindowSize from "./hooks/useWindowSize";
 import Home from "./pages/home";
 import Nav from "./components/nav";
 import Skills from "./pages/skills";
+import Archives from "./pages/archives";
+import About from "./pages/about";
 
 //Smooth scroll by https://www.youtube.com/watch?v=Dz6Sg630I8M
+//TODO: Random color on each visit
 function App() {
     const size = useWindowSize();
 
@@ -62,14 +65,14 @@ function App() {
 
 
     return (
-        <div ref={app} className="text-white font-Rozha bg-dark">
+        <div ref={app} className="text-white font-Rozha bg-dark w-screen max-w-full">
             <Nav/>
-
+            <Home/>
             <div ref={scrollContainer} className="scroll">
-
-                <div>
-                    <Home/>
+                <div className="bg-dark">
+                    <About/>
                     <Skills/>
+                    <Archives/>
 
 
 

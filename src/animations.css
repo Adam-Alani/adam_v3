@@ -1,0 +1,12 @@
+
+.bottom_up {
+    background-image: linear-gradient(to top, #ffffff 50%, transparent 50%);
+    background-size: 100% 200%;
+    background-position: top;
+    transition: background-position 0.5s ease-in-out; /** I've changed the time for demo purposes **/
+    color: #ffffff;
+}
+
+.bottom_up:hover {
+    background-position: bottom;
+}

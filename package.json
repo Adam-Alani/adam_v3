@@ -4,8 +4,10 @@
   "private": true,
   "dependencies": {
     "@craco/craco": "^6.3.0",
+    "@react-three/cannon": "^4.0.1",
     "@react-three/drei": "^7.13.1",
     "@react-three/fiber": "^7.0.14",
+    "@react-three/postprocessing": "^2.0.5",
     "cra-template": "1.1.2",
     "gsap": "^3.8.0",
     "react": "^17.0.2",
@@ -38,8 +40,13 @@
     ]
   },
   "devDependencies": {
+    "@octokit/rest": "^18.12.0",
     "autoprefixer": "^9.8.8",
+    "babel-plugin-glsl": "^1.0.0",
     "postcss": "^7.0.39",
-    "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.2.16"
+    "postprocessing": "^6.23.1",
+    "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.2.16",
+    "use-asset": "^1.0.4",
+    "valtio": "^1.2.4"
   }
 }
