@@ -18,8 +18,12 @@ const Skills = () => {
         let reverse = gsap.to(".backwards", {xPercent: -100, repeat: -1, duration: 10, ease: "linear"}).totalProgress(0.5);
         gsap.set(".marquee__inner", {xPercent: -50});
 
+
         animationTween.current = tween;
         backwardTween.current = reverse;
+        gsap.to(backwardTween.current, {
+            timeScale: -factor
+        }).play();
 
         return () => {
             backwardTween.current.kill();

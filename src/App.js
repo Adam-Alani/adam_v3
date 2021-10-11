@@ -1,4 +1,4 @@
-import React, {useEffect,useRef} from "react";
+import React, {useEffect, useRef, useState} from "react";
 import './index.css';
 import useWindowSize from "./hooks/useWindowSize";
 import Home from "./pages/home";
@@ -6,10 +6,13 @@ import Nav from "./components/nav";
 import Skills from "./pages/skills";
 import Archives from "./pages/archives";
 import About from "./pages/about";
+import LoadingAnimation from "./components/loadingAnimation";
 
 //Smooth scroll by https://www.youtube.com/watch?v=Dz6Sg630I8M
 //TODO: Random color on each visit
 function App() {
+
+    const [loading, setLoading] = useState(true);
     const size = useWindowSize();
 
     // Ref for parent div and scrolling div
@@ -25,6 +28,14 @@ function App() {
     };
 
     // Run scrollrender once page is loaded.
+
+
+    useEffect(() => {
+        setTimeout(() => {
+            setLoading(false);
+        }, 5000)
+    }, []);
+
     useEffect(() => {
         requestAnimationFrame(() => skewScrolling());
     }, []);
@@ -64,18 +75,24 @@ function App() {
     };
 
 
+
+
     return (
-        <div ref={app} className="text-white font-Rozha bg-dark w-screen max-w-full">
-            <Nav/>
-            <Home/>
-            <div ref={scrollContainer} className="scroll">
-                <div className="bg-dark">
-                    <About/>
-                    <Skills/>
-                    <Archives/>
+        <div ref={app} className="text-white font-Rozha bg-dark w-screen max-w-full overflow-auto">
 
 
+        { loading && <div ><LoadingAnimation /></div>}
+            <div className={`transition duration-1000 ease-in ${loading ? "opacity-0" : "opacity-100" }`}>
+                {/*<Nav className={`transition duration-1000 ease-in ${loading ? "hidden" : "" }`}/>*/}
 
+                <Home/>
+                <div ref={scrollContainer}>
+                    <div className={`bg-dark transition duration-1000 ease-in ${loading ? "hidden" : "visible block" }`} >
+                        <About/>
+                        <Skills/>
+                        <Archives/>
+
+                    </div>
                 </div>
             </div>
         </div>

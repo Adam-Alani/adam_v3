@@ -10,3 +10,18 @@
 .bottom_up:hover {
     background-position: bottom;
 }
+
+
+.logo-fill path{
+    fill: #ffffff;
+    fill-opacity:0;
+    animation:DASH3 4s ease-in-out 1s forwards;
+}
+
+@keyframes DASH3{
+    0%  {stroke-dashoffset:2500;}
+    50% {fill-opacity:0;}
+    60%  {stroke-dashoffset:0;}
+    100%{stroke-dashoffset:0;fill-opacity:100%;}
+}
+
