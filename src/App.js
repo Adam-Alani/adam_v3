@@ -12,7 +12,7 @@ import LoadingAnimation from "./components/loadingAnimation";
 //TODO: Random color on each visit
 function App() {
 
-    const [loading, setLoading] = useState(true);
+    const [loading, setLoading] = useState(false);
     const size = useWindowSize();
 
     // Ref for parent div and scrolling div
@@ -30,11 +30,11 @@ function App() {
     // Run scrollrender once page is loaded.
 
 
-    useEffect(() => {
-        setTimeout(() => {
-            setLoading(false);
-        }, 5000)
-    }, []);
+    // useEffect(() => {
+    //     setTimeout(() => {
+    //         setLoading(false);
+    //     }, 5000)
+    // }, []);
 
     useEffect(() => {
         requestAnimationFrame(() => skewScrolling());
@@ -65,7 +65,7 @@ function App() {
         const difference = data.current - data.rounded;
         const acceleration = difference / size.width;
         const velocity = +acceleration;
-        const skew = velocity * 20;
+        const skew = velocity * 15;
 
         //Assign skew and smooth scrolling to the scroll container
         scrollContainer.current.style.transform = `translate3d(0, -${data.rounded}px, 0) skewY(${skew}deg)`;
@@ -82,10 +82,10 @@ function App() {
 
 
         { loading && <div ><LoadingAnimation /></div>}
-            <div className={`transition duration-1000 ease-in ${loading ? "opacity-0" : "opacity-100" }`}>
+            <div className={`transition duration-2000 ${loading ? "opacity-0" : "opacity-100" }`}>
                 {/*<Nav className={`transition duration-1000 ease-in ${loading ? "hidden" : "" }`}/>*/}
 
-                <Home/>
+                <Home hidden={loading}/>
                 <div ref={scrollContainer}>
                     <div className={`bg-dark transition duration-1000 ease-in ${loading ? "hidden" : "visible block" }`} >
                         <About/>

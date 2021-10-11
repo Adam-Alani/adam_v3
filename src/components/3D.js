@@ -1,9 +1,9 @@
 import * as THREE from 'three'
 import {useEffect, useLayoutEffect, useMemo, useRef, useState} from 'react'
 import { useGLTF } from '@react-three/drei'
-import {useFrame, useLoader} from "@react-three/fiber";
+import {useFrame, useLoader, useThree} from "@react-three/fiber";
 import {GLTFLoader} from "three/examples/jsm/loaders/GLTFLoader";
-import {useCompoundBody} from "@react-three/cannon";
+import {useCompoundBody, usePlane, useSphere} from "@react-three/cannon";
 
 
 
@@ -34,7 +34,7 @@ export function Logo() {
 
 
 const sphereMaterial = new THREE.MeshLambertMaterial({ color: "#ff7b00"})
-const sphereGeometry = new THREE.SphereGeometry(1, 28, 28)
+const sphereGeometry = new THREE.SphereGeometry(1, 24, 24)
 export function Spheres({ vec = new THREE.Vector3(), ...props }) {
     const [ref, api] = useCompoundBody(() => ({
         ...props,
@@ -48,4 +48,17 @@ export function Spheres({ vec = new THREE.Vector3(), ...props }) {
             <mesh castShadow receiveShadow scale={props.args} geometry={sphereGeometry} material={sphereMaterial} />
         </group>
     )
+}
+
+
+
+
+export function Collisions() {
+    const viewport = useThree((state) => state.viewport)
+    usePlane(() => ({ position: [0, 0, 0], rotation: [0, 0, 0] }))
+    usePlane(() => ({ position: [0, 0, 8], rotation: [0, -Math.PI, 0] }))
+    usePlane(() => ({ position: [0, -4, 0], rotation: [-Math.PI / 2, 0, 0] }))
+    usePlane(() => ({ position: [0, 4, 0], rotation: [Math.PI / 2, 0, 0] }))
+    const [, api] = useSphere(() => ({ type: "Kinematic", args: [2] }))
+    return useFrame((state) => api.position.set((state.mouse.x * viewport.width) / 2, (state.mouse.y * viewport.height) / 2, 2.5))
 }

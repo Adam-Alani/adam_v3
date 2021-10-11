@@ -77,16 +77,10 @@ const Skills = () => {
 
 
     return (
-        <div className="h-screen relative w-screen overflow-x-hidden min-h-full  max-w-full text-9xl bg-dark">
-
-
-
+        <div className=" relative w-screen overflow-x-hidden min-h-full  max-w-full text-9xl bg-dark border-t-4 border-white pt-14 pb-16">
             <Marquee direction={'forward'}/>
             <Marquee direction={'backwards'}/>
             <Marquee direction={'forward'}/>
-
-
-
         </div>
     )
 }

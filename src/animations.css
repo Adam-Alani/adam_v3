@@ -25,3 +25,32 @@
     100%{stroke-dashoffset:0;fill-opacity:100%;}
 }
 
+.fade-in {
+    opacity: 0;
+    animation: fadeIn linear 3s forwards;
+    -webkit-animation: fadeIn linear 3s forwards;
+    -moz-animation: fadeIn linear 3s forwards;
+    -o-animation: fadeIn linear 3s forwards;
+}
+
+@keyframes fadeIn {
+    0% {opacity:0;}
+    50% {opacity: 0;}
+    100% {opacity:1;}
+}
+@-moz-keyframes fadeIn {
+    0% {opacity:0;}
+    50% {opacity: 0;}
+    100% {opacity:1;}
+}
+@-webkit-keyframes fadeIn {
+    0% {opacity:0;}
+    50% {opacity: 0;}
+    100% {opacity:1;}
+}
+@-o-keyframes fadeIn {
+    0% {opacity:0;}
+    50% {opacity: 0;}
+    100% {opacity:1;}
+}
+

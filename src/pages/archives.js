@@ -23,10 +23,10 @@ const Archives = () => {
 
 
     return (
-        <div className="px-28 ">
+        <div className="px-28 border-t-4 border-white py-28">
             <h1 className="text-5xl ">Archives</h1>
             <div className="py-16 font-Work-Sans">
-                {repos && repos.map((repo, idx) => {
+                {repos ? repos.map((repo, idx) => {
                     return (
                         <div className="w-2/3">
                             <div className="py-1 border-b-2 border-dotted transition duration-500 ease-in-out transform flex flex-row  justify-between">
@@ -45,11 +45,12 @@ const Archives = () => {
                                 </div>
 
                             </div>
-
                         </div>
 
                     )
-                })}
+                }) : (
+                    <h1>Loading...</h1>
+                )}
             </div>
         </div>
     )

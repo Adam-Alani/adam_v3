@@ -14,6 +14,9 @@ module.exports = {
         primary: '#ffe279',
         dark: '#181818FF'
       },
+      transitionDuration: {
+        '2000': '2000ms',
+      }
     },
   },
   variants: {
