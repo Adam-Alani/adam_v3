@@ -29,7 +29,7 @@ const Archives = () => {
                 {repos ? repos.map((repo, idx) => {
                     return (
                         <div className="w-2/3">
-                            <div className="py-1 border-b-2 border-dotted transition duration-500 ease-in-out transform flex flex-row  justify-between">
+                            <a target="_blank" rel="noopener" href={repo.html_url}  className="py-1 border-b-2 border-dotted transition duration-500 ease-in-out transform flex flex-row  justify-between">
                                 <div>
                                     <h1 className=" pt-2 pr-8 text-xl select-none ">{(repo.name)}</h1>
                                     <p className=" pr-8 pb-2 text-sm text-gray-300 select-none overflow-ellipsis font-light">{(repo.description)}</p>
@@ -44,7 +44,7 @@ const Archives = () => {
                                     </svg>
                                 </div>
 
-                            </div>
+                            </a>
                         </div>
 
                     )

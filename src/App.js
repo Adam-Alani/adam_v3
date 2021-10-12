@@ -7,6 +7,7 @@ import Skills from "./pages/skills";
 import Archives from "./pages/archives";
 import About from "./pages/about";
 import LoadingAnimation from "./components/loadingAnimation";
+import Projects from "./pages/projects";
 
 //Smooth scroll by https://www.youtube.com/watch?v=Dz6Sg630I8M
 //TODO: Random color on each visit
@@ -89,6 +90,7 @@ function App() {
                 <div ref={scrollContainer}>
                     <div className={`bg-dark transition duration-1000 ease-in ${loading ? "hidden" : "visible block" }`} >
                         <About/>
+                        <Projects/>
                         <Skills/>
                         <Archives/>
 

@@ -6,7 +6,7 @@ import Breakout from "../components/breakout";
 const About = () => {
 
     return (
-        <div className="text-4xl w-screen h-screen max-w-full">
+        <div className="text-4xl w-screen h-screen max-w-full ">
             <div>
                 <Breakout/>
             </div>
