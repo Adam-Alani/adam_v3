@@ -1,5 +1,5 @@
 import React from "react";
-import Breakout from "../components/breakout";
+import Breakout from "../components/Breakout";
 
 
 //TODO what if i made this into a pong game tho
