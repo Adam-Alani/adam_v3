@@ -8,12 +8,13 @@ import Archives from "./pages/archives";
 import About from "./pages/about";
 import LoadingAnimation from "./components/loadingAnimation";
 import Projects from "./pages/projects";
+import Contact from "./pages/contact";
 
 //Smooth scroll by https://www.youtube.com/watch?v=Dz6Sg630I8M
 //TODO: Random color on each visit
 function App() {
 
-    const [loading, setLoading] = useState(false);
+    const [loading, setLoading] = useState(true);
     const size = useWindowSize();
 
     // Ref for parent div and scrolling div
@@ -22,7 +23,7 @@ function App() {
 
     // Configs
     const data = {
-        ease: 0.1,
+        ease: 0.05,
         current: 0,
         previous: 0,
         rounded: 0
@@ -31,11 +32,11 @@ function App() {
     // Run scrollrender once page is loaded.
 
 
-    // useEffect(() => {
-    //     setTimeout(() => {
-    //         setLoading(false);
-    //     }, 5000)
-    // }, []);
+    useEffect(() => {
+        setTimeout(() => {
+            setLoading(false);
+        }, 5000)
+    }, []);
 
     useEffect(() => {
         requestAnimationFrame(() => skewScrolling());
@@ -53,6 +54,7 @@ function App() {
         }px`;
     };
 
+
     // Scrolling
     const skewScrolling = () => {
         //Set Current to the scroll position amount
@@ -65,8 +67,7 @@ function App() {
         // Difference between
         const difference = data.current - data.rounded;
         const acceleration = difference / size.width;
-        const velocity = +acceleration;
-        const skew = velocity * 15;
+        const skew = +acceleration;
 
         //Assign skew and smooth scrolling to the scroll container
         scrollContainer.current.style.transform = `translate3d(0, -${data.rounded}px, 0) skewY(${skew}deg)`;
@@ -85,7 +86,6 @@ function App() {
         { loading && <div ><LoadingAnimation /></div>}
             <div className={`transition duration-2000 ${loading ? "opacity-0" : "opacity-100" }`}>
                 {/*<Nav className={`transition duration-1000 ease-in ${loading ? "hidden" : "" }`}/>*/}
-
                 <Home hidden={loading}/>
                 <div ref={scrollContainer}>
                     <div className={`bg-dark transition duration-1000 ease-in ${loading ? "hidden" : "visible block" }`} >
@@ -93,6 +93,7 @@ function App() {
                         <Projects/>
                         <Skills/>
                         <Archives/>
+                        <Contact/>
 
                     </div>
                 </div>

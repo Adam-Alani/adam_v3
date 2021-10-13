@@ -8,7 +8,7 @@ export default {
         speed: 10,
     },
     about: {
-        content: "Hey! I'm Adam, a developer and designer based in Paris, France. Currently studying computer science and actively looking for jobs and internships"
+        content: "I'm a developer and designer based in Paris, France. Currently studying computer science and actively looking for jobs and internships"
     },
     paddleProps: {
         height: 10,

@@ -124,7 +124,7 @@ export default function Board() {
         id="canvas"
         ref={canvasRef}
         className="border-b-4"
-        height={2*window.innerHeight/3}
+        height={3*window.innerHeight/4}
         width={window.innerWidth}
       />
     </div>

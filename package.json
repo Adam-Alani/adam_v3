@@ -7,8 +7,6 @@
     "@react-three/cannon": "^4.0.1",
     "@react-three/drei": "^7.13.1",
     "@react-three/fiber": "^7.0.14",
-    "@react-three/postprocessing": "^2.0.5",
-    "cra-template": "1.1.2",
     "gsap": "^3.8.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
@@ -45,8 +43,6 @@
     "babel-plugin-glsl": "^1.0.0",
     "postcss": "^7.0.39",
     "postprocessing": "^6.23.1",
-    "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.2.16",
-    "use-asset": "^1.0.4",
-    "valtio": "^1.2.4"
+    "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.2.16"
   }
 }

@@ -2,12 +2,15 @@ import React, {useCallback, useEffect, useRef, useState} from "react";
 import '../index.css'
 import { gsap } from "gsap";
 import Marquee from "../components/marquee";
+import {useLocomotiveScroll} from "react-locomotive-scroll";
 
 
 const Skills = () => {
 
     const animationTween = useRef(null);
     const backwardTween = useRef(null);
+    const {scroll} = useLocomotiveScroll();
+    console.log(scroll)
 
     const factor = 0.5;
 
