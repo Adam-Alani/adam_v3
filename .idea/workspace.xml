@@ -2,24 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2fe6626f-93f3-4b42-9906-90671ffb04d3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/styles/fonts.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/styles/tailwind.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitattributes" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/animations.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/animations.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Breakout/Board.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Breakout/Board.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/hooks/useMousePosition.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/hooks/useMousePosition.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/about.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/about.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/archives.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/archives.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/home.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/home.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/projects.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/projects.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,6 +44,7 @@
       <option name="presentableId" value="Default" />
       <updated>1634152975982</updated>
       <workItem from="1634152979635" duration="8754000" />
+      <workItem from="1634162090703" duration="31000" />
     </task>
     <servers />
   </component>
@@ -75,5 +61,6 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>

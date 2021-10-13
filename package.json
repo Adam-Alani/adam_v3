@@ -43,6 +43,7 @@
     ]
   },
   "devDependencies": {
+    "@octokit/rest": "^18.12.0",
     "@react-three/drei": "^7.14.2",
     "autoprefixer": "^9.8.8",
     "babel-plugin-glsl": "^1.0.0",
