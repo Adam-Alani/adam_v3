@@ -2,8 +2,14 @@ module.exports = {
   purge: ['./src/**/*.{js,jsx,ts,tsx}', './public/index.html'],
   darkMode: false, // or 'media' or 'class'
   theme: {
+    cursor: {
+      grab: 'grab',
+      grabbing: 'grabbing'
+
+    },
     inset: {
-      '1/8': '12.5%'
+      '1/8': '12.5%',
+      '1/20': '5%'
     },
     fontFamily: {
       'Rakkas': ['Rakkas'],

@@ -111,4 +111,47 @@ img {
 }
 
 
+.scrolling-wrapper {
+    overflow-x: scroll;
+    overflow-y: scroll;
+    white-space: nowrap;
+}
+
+.card {
+    display: inline-block;
+}
+
+::-webkit-scrollbar {
+                          width: 4px;
+                          height: 4px;
+                      }
+::-webkit-scrollbar-button {
+    width: 0px;
+    height: 0px;
+}
+::-webkit-scrollbar-thumb {
+    background: #e1e1e1;
+    border: 0px none #ffffff;
+    border-radius: 28px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #ffffff;
+}
+::-webkit-scrollbar-thumb:active {
+    background: #000000;
+}
+::-webkit-scrollbar-track {
+    background: #666666;
+    border: 0px none #ffffff;
+    border-radius: 0px;
+}
+::-webkit-scrollbar-track:hover {
+    background: #666666;
+}
+::-webkit-scrollbar-track:active {
+    background: #333333;
+}
+::-webkit-scrollbar-corner {
+    background: transparent;
+}
 

@@ -34,7 +34,7 @@ const Marquee = ({direction}) => {
 
         <section className="marquee">
 
-            <div className="marquee__inner" aria-hidden="true">
+            <div className="marquee__inner " aria-hidden="true">
 
                 <div className={`marquee__part ${direction} flex flex-row whitespace-nowrap"`}>
                     {skills.map(function(item, i){return <p> <span className="ml-6 hover:text-primary" key={i}>{item} </span> -</p>;})}

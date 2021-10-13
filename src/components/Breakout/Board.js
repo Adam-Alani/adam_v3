@@ -22,20 +22,22 @@ export default function Board() {
   ballObj.x = size.width/2;
   ballObj.y = size.height/3;
 
+
+
   const resetGame = () => {
     words = [];
-    ballObj.x = size.width/2;
-    ballObj.y = size.height/3;
     playing = false;
   }
-
 
   const handlePlay = () => {
     const newState = !playing;
     if (newState === false) {
-      resetGame();
+      words = [];
+      playing = false;
     } else {
-      playing = true;
+      playing = newState;
+      ballObj.x = size.width/2;
+      ballObj.y = size.height/3;
     }
   }
 
@@ -44,7 +46,7 @@ export default function Board() {
       const canvas = canvasRef.current;
       const ctx = canvas.getContext("2d");
 
-      ctx.font = "30px mono";
+      ctx.font = "30px Work-Sans";
       ctx.fillStyle = "#fff";
 
       paddleProps.y = canvas.height - 30;
@@ -118,8 +120,15 @@ export default function Board() {
             event.clientX -
             paddleProps.width / 2 -
             10)}
-         className="w-screen max-w-full relative " style={{ textAlign: "center" }}>
-      <button onClick={handlePlay} className="absolute opacity-40  font-Recoleta font-light px-9 left-1/2 top-1/2 ">click me!</button>
+         className="w-screen max-w-full relative ">
+
+      <div style={{top:"5%"}} className="font-Work-Sans flex flex-col justify-start items-start left-1/8  absolute">
+        <p className=" font-medium">Hey, I'm</p>
+        <button onClick={handlePlay} className=" text-8xl lg:text-9xl font-bold text-primary transition hover:text-white ">Adam</button>
+        <hr/>
+      </div>
+      <p style={{bottom:'0', right:'0', position:'absolute'}} className="text-sm pr-1 pb-1">*click on my name</p>
+
       <canvas
         id="canvas"
         ref={canvasRef}
