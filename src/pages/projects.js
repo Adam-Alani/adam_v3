@@ -1,4 +1,5 @@
 import React, {useCallback, useEffect, useState} from 'react';
+import Reveal from "react-awesome-reveal";
 
 const Projects = () => {
 
@@ -32,8 +33,12 @@ const Projects = () => {
     }, [mouseDown]);
 
     return (
-        <div  className=" w-screen h-screen max-w-full pt-8 bg-dark border-t-4 border-dark ">
-            <h1 className="text-5xl px-28 ">Projects</h1>
+        <div  className=" w-screen h-screen max-w-full bg-dark border-t-4 border-dark ">
+            <div className="animate-reveal">
+                <Reveal triggerOnce delay={100} keyframes={"reveal"}>
+                    <h1 className="revealText float-right text-5xl px-8 title font-Work-Sans ">PROJECTS</h1>
+                </Reveal>
+            </div>
             <div>
             </div>
         </div>

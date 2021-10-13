@@ -1,0 +1,40 @@
+@import url("https://rsms.me/inter/inter.css");
+@font-face {
+    font-family: "Rakkas";
+    src: url(../fonts/Rakkas-Regular.ttf);
+}
+@font-face {
+    font-family: "Recoleta";
+    font-weight: 300;
+    src: url(../fonts/Recoleta-RegularDEMO.otf);
+}
+@font-face {
+    font-family: "Rozha";
+    font-weight: 500;
+    src: url(../fonts/RozhaOne-Regular.ttf);
+}
+@font-face {
+    font-family: "Work-Sans";
+    font-weight: 700;
+    src: url(../fonts/WorkSans-Bold.ttf);
+}
+@font-face {
+    font-family: "Work-Sans";
+    font-weight: 500;
+    src: url(../fonts/WorkSans-Medium.ttf);
+}
+@font-face {
+    font-family: "Work-Sans";
+    font-weight: 800;
+    src: url(../fonts/WorkSans-ExtraBold.ttf);
+}
+@font-face {
+    font-family: "Work-Sans";
+    font-weight: 300;
+    src: url(../fonts/WorkSans-ExtraLight.ttf);
+}
+@font-face {
+    font-family: "Work-Sans";
+    font-weight: 400;
+    src: url(../fonts/WorkSans-Light.ttf);
+}

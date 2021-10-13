@@ -121,14 +121,7 @@ export default function Board() {
             paddleProps.width / 2 -
             10)}
          className="w-screen max-w-full relative ">
-
-      <div style={{top:"5%"}} className="font-Work-Sans flex flex-col justify-start items-start left-1/8  absolute">
-        <p className=" font-medium">Hey, I'm</p>
-        <button onClick={handlePlay} className=" text-8xl lg:text-9xl font-bold text-primary transition hover:text-white ">Adam</button>
-        <hr/>
-      </div>
       <p style={{bottom:'0', right:'0', position:'absolute'}} className="text-sm pr-1 pb-1">*click on my name</p>
-
       <canvas
         id="canvas"
         ref={canvasRef}

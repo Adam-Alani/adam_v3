@@ -54,3 +54,45 @@
     100% {opacity:1;}
 }
 
+.revealText {
+    animation: reveal 1.5s cubic-bezier(0.77, 0, 0.175, 1) 0.5s;
+    visibility: visible;
+    animation-fill-mode: forwards;
+}
+
+@keyframes reveal {
+    0% {
+        transform: translate(0,100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translate(0,0);
+        opacity: 100;
+    }
+}
+
+.animate-reveal {
+    overflow: hidden;
+    line-height: 1;
+}
+
+
+/*.animate-reveal {*/
+/*    overflow: hidden;*/
+/*    line-height: 1;*/
+/*}*/
+/*h1 span {*/
+/*    opacity: 0;*/
+/*    display: block;*/
+/*}*/
+/*@keyframes reveal {*/
+/*    0% {*/
+/*        transform: translate(0,100%);*/
+/*        opacity: 0;*/
+/*    }*/
+/*    100% {*/
+/*        transform: translate(0,0);*/
+/*        opacity: 100;*/
+/*    }*/
+/*}*/
+

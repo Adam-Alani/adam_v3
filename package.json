@@ -5,14 +5,18 @@
   "dependencies": {
     "@craco/craco": "^6.3.0",
     "@react-three/cannon": "^4.0.1",
-    "@react-three/drei": "^7.13.1",
-    "@react-three/fiber": "^7.0.14",
+    "@react-three/fiber": "^7.0.15",
+    "@react-three/postprocessing": "^2.0.5",
+    "@testing-library/jest-dom": "^5.11.4",
+    "@testing-library/react": "^11.1.0",
+    "@testing-library/user-event": "^12.1.10",
     "gsap": "^3.8.0",
     "react": "^17.0.2",
+    "react-awesome-reveal": "^3.8.1",
     "react-dom": "^17.0.2",
-    "react-indiana-drag-scroll": "^2.1.0",
     "react-scripts": "4.0.3",
-    "three": "^0.133.1"
+    "three": "^0.133.1",
+    "web-vitals": "^1.0.1"
   },
   "scripts": {
     "start": "craco start",
@@ -39,11 +43,12 @@
     ]
   },
   "devDependencies": {
-    "@octokit/rest": "^18.12.0",
+    "@react-three/drei": "^7.14.2",
     "autoprefixer": "^9.8.8",
     "babel-plugin-glsl": "^1.0.0",
     "postcss": "^7.0.39",
     "postprocessing": "^6.23.1",
-    "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.2.16"
+    "react-reveal": "^1.2.2",
+    "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.2.17"
   }
 }

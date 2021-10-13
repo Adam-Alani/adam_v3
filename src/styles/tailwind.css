@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.title {
+    @apply font-black text-7xl sm:text-8xl md:text-9xl
+}
+
+
+.repo_hover {
+    @apply select-none transition group-hover:text-primary duration-75
+}
+
+.content-padding {
+    @apply px-8 py-2
+}
