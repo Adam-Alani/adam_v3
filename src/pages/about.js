@@ -1,7 +1,7 @@
 import React, {useEffect, useRef, useState} from "react";
 import Breakout from "../components/Breakout";
 import {Fade} from "react-awesome-reveal";
-import { gsap, Power3 } from "gsap";
+import { gsap, Power1, Quint } from "gsap";
 import useMousePosition from "../hooks/useMousePosition";
 import ProfilePic from "../assets/profile.png";
 import {clamp} from "gsap/gsap-core";
@@ -64,20 +64,25 @@ const About = () => {
 
     const enter = () => {
 
+        console.log("Entered")
         gsap.killTweensOf(".image")
         tl = gsap.timeline({
             onStart: () => {
                 // show the image element
                 setInside(true)
                 // set a high z-index value so image appears on top of other elements
-            }
+            },
+            startAt: {opacity: 0, scale: 1},
         })
-            // animate the image wrap
 
             // animate the image element
             .to(".image",  {
-                duration: 0.2,
+                duration: 0.5,
                 ease: 'Sine.easeOut',
+                autoAlpha: 1,
+                opacity: 1,
+                scale: 1,
+                // width: "100%",
                 // startAt: {x: direction.x < 0 ? '100%': '-100%'},
                 // x: '0%'
             }, 0);
@@ -95,12 +100,15 @@ const About = () => {
             onComplete: () => {
                 setInside(false)
             }
-        })
-            .to(".image",  {
-                duration: 0.2,
-                ease: 'Sine.easeOut',
-                // x: direction.x < 0 ? '-100%' : '100%'
-            }, 0);
+        }).to('.image', {
+            duration: 1,
+            ease: Power1.easeOut,
+            opacity: 0
+        }, 0.4).to('.image', {
+            duration: 1,
+            ease: Quint.easeOut,
+            scale: 0.2
+        }, 0.4)
         stopRendering();
     }
 
@@ -128,13 +136,13 @@ const About = () => {
         // updated cache values
         mouseCache = {x: mousePos.x, y: mousePos.y};
 
-        animated.x.current = Math.abs(mousePos.x  - el.current.offsetLeft) ;
-        animated.y.current = Math.abs(mousePos.y  - el.current.offsetTop) - imageRef.current.offsetHeight;
+        animated.x.current = Math.abs(mousePos.x  - el.current.offsetLeft) - imageRef.current.offsetWidth /2;
+        animated.y.current = Math.abs(mousePos.y  - el.current.offsetTop) - imageRef.current.offsetHeight * 1.5;
 
         animated.rotation.current = first ? 0 : map(mouseDistanceX,0,100,0,direction.x < 0 ? 60 : -60);
 
-        animated.x.previous = first ? animated.x.current : lerp(animated.x.previous, animated.x.current, 0.88);
-        animated.y.previous = first ? animated.y.current : lerp(animated.y.previous, animated.y.current, 0.88);
+        animated.x.previous = first ? animated.x.current : lerp(animated.x.previous, animated.x.current, 0.3);
+        animated.y.previous = first ? animated.y.current : lerp(animated.y.previous, animated.y.current, 0.3);
 
         animated.rotation.previous = first ? animated.rotation.current : lerp(animated.rotation.previous, animated.rotation.current, animated.rotation.amt);
         console.log(animated.y.current)
@@ -143,7 +151,6 @@ const About = () => {
             y:animated.y.previous ,
             rotation: animated.rotation.previous,
             stagger: -0.05,
-            // rotation: this.animatableProperties.rotation.previous,
             // filter: `brightness(${this.animatableProperties.brightness.previous})`
         });
         first = false;
@@ -152,29 +159,29 @@ const About = () => {
 
     return (
         <>
-            <div ref={reveal}  className={`profile hover-reveal w-96 shadow ${inside ? ' opacity-100 ' : 'invisible'}`}>
-                <img ref={imageRef} src={ProfilePic} alt="Me!" className="image hover-reveal__img"/>
-            </div>
-            <div ref={reveal}  className={`profile hover-reveal w-96 shadow ${inside ? ' opacity-100 ' : 'invisible'}`}>
-                <img ref={imageRef} src={ProfilePic} alt="Me!" className="image hover-reveal__img"/>
-            </div>
-            <div ref={reveal}  className={`profile hover-reveal w-96 shadow ${inside ? ' opacity-100 ' : 'invisible'}`}>
-                <img ref={imageRef} src={ProfilePic} alt="Me!" className="image hover-reveal__img"/>
-            </div>
-            <div ref={reveal}  className={`profile hover-reveal w-96 shadow ${inside ? ' opacity-100 ' : 'invisible'}`}>
-                <img ref={imageRef} src={ProfilePic} alt="Me!" className="image hover-reveal__img"/>
-            </div>
-            <div ref={reveal}  className={`profile hover-reveal w-96 shadow ${inside ? ' opacity-100 ' : 'invisible'}`}>
+            {/*<div ref={reveal}  className={`profile hover-reveal w-96 `}>*/}
+            {/*    <img ref={imageRef} src={ProfilePic} alt="Me!" className="image hover-reveal__img"/>*/}
+            {/*</div>*/}
+            {/*<div ref={reveal}  className={`profile hover-reveal w-96  `}>*/}
+            {/*    <img ref={imageRef} src={ProfilePic} alt="Me!" className="image hover-reveal__img"/>*/}
+            {/*</div>*/}
+            {/*<div ref={reveal}  className={`profile hover-reveal w-96  `}>*/}
+            {/*    <img ref={imageRef} src={ProfilePic} alt="Me!" className="image hover-reveal__img"/>*/}
+            {/*</div>*/}
+            {/*<div ref={reveal}  className={`profile hover-reveal w-96  `}>*/}
+            {/*    <img ref={imageRef} src={ProfilePic} alt="Me!" className="image hover-reveal__img"/>*/}
+            {/*</div>*/}
+            <div ref={reveal}  className={`profile hover-reveal w-96  `}>
                 <img ref={imageRef} src={ProfilePic} alt="Me!" className="image hover-reveal__img"/>
             </div>
 
-            <div className="flex flex-row border-t-4 border-white">
+            <div ref={el} onMouseMove={handleMouseMove} onMouseEnter={enter} onMouseLeave={leave}   className="flex flex-row border-t-4 border-white">
                 <section  className="py-24 pl-4 sm:pl-16 md:pl-32 lg:pl-56   text-4xl  w-screen h-screen max-w-full">
                     <Fade triggerOnce cascade>
                         <div className="font-Work-Sans flex flex-col justify-start items-start ">
                             <p className='font-medium'>Hey, I'm</p>
 
-                            <p ref={el} onMouseMove={handleMouseMove} onMouseEnter={enter} onMouseLeave={leave}   className=" text-8xl lg:text-9xl font-bold transition hover:text-primary ">Adam</p>
+                            <p className=" text-8xl lg:text-9xl font-bold transition hover:text-primary ">Adam</p>
                             <br/>
                         </div>
                         <div className="font-Recoleta">
