@@ -4,7 +4,7 @@ export default function Words(words, prevWords, canvas, ctx) {
   if (prevWords.length > 0) {
       return [];
   }
-  return mapWords(ctx, lines,canvas.width/8, 40)
+  return mapWords(ctx, lines,canvas.width/8, 100)
 
   function getLines(ctx, maxWidth) {
       let wordsArray = words.split(" ");

@@ -83,7 +83,7 @@ const About = () => {
         <>
 
 
-            <div className="flex flex-row border-t-4 border-white bounds">
+            <div className="flex flex-row bounds">
                 <img src={ProfilePic} alt="Me!" className="  image behind filter brightness-200 "/>
                 <img src={ProfilePic} alt="Me!" className="  image behind filter brightness-150"/>
                 <img src={ProfilePic} alt="Me!" className="  image behind filter brightness-125"/>

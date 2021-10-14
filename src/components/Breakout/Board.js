@@ -29,13 +29,11 @@ export default function Board() {
     playing = false;
   }
 
+
   const handlePlay = () => {
-    const newState = !playing;
-    if (newState === false) {
-      words = [];
-      playing = false;
-    } else {
-      playing = newState;
+    const start = !playing;
+    if (start) {
+      playing = start;
       ballObj.x = size.width/2;
       ballObj.y = size.height/3;
     }
@@ -116,17 +114,17 @@ export default function Board() {
   }, []);
 
   return (
-    <div onMouseMove={(event) =>
+    <div onClick={handlePlay} onMouseMove={(event) =>
         (paddleProps.x =
             event.clientX -
             paddleProps.width / 2 -
             10)}
          className="w-screen max-w-full relative ">
-      <p onClick={handlePlay} style={{bottom:'0', right:'0', position:'absolute'}} className="text-sm pr-1 pb-1">*click on my name</p>
+      <p  style={{bottom:'0', right:'0', position:'absolute'}} className=" font-Work-Sans pr-1 pb-1">*click anywhere</p>
       <canvas
         id="canvas"
         ref={canvasRef}
-        className="border-b-4"
+        className="border-b-4 border-t-4"
         height={3*window.innerHeight/4}
         width={window.innerWidth}
       />
