@@ -16,31 +16,10 @@
     @apply px-8 py-2
 }
 
-
-.profile {
-
+.image {
+    @apply w-96 rotate-12 transform
 }
 
 
-.hover-reveal {
-    position: absolute;
-    top: 0;
-    left: 0;
-    pointer-events: none;
-}
 
-.hover-reveal__inner {
-    overflow: hidden;
-}
 
-.hover-reveal__inner,
-.hover-reveal__img {
-    width: 100%;
-    height: 100%;
-    position: relative;
-}
-
-.hover-reveal__img {
-    background-size: cover;
-    background-position: 50% 50%;
-}
