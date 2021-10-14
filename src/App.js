@@ -17,7 +17,7 @@ import './styles/fonts.css';
 //TODO: Random color on each visit
 function App() {
 
-    const [loading, setLoading] = useState(false);
+    const [loading, setLoading] = useState(true);
     const size = useWindowSize();
 
     // Ref for parent div and scrolling div
@@ -35,11 +35,11 @@ function App() {
     // Run scrollrender once page is loaded.
 
 
-    // useEffect(() => {
-    //     setTimeout(() => {
-    //         setLoading(false);
-    //     }, 5000)
-    // }, []);
+    useEffect(() => {
+        setTimeout(() => {
+            setLoading(false);
+        }, 5000)
+    }, []);
     //
     // useEffect(() => {
     //     requestAnimationFrame(() => skewScrolling());
