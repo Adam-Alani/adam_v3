@@ -90,9 +90,9 @@ const About = () => {
                 <img src={ProfilePic} alt="Me!" className="  image behind filter brightness-125"/>
                 <img src={ProfilePic} alt="Me!" className="  image behind filter shadow-2xl brightness-110"/>
                 <img src={ProfilePic} alt="Me!" className="  image draggable shadow-xl border border-opacity-10 "/>
-                <section  className="py-24 pl-4 sm:pl-16 md:pl-32 lg:pl-56 text-4xl  w-screen h-screen max-w-full pointer-events-none bg-dark">
+                <section  className="py-24 pl-4 sm:pl-16 md:pl-32 lg:pl-56 text-4xl  w-screen h-screen max-w-full pointer-events-none  mix-blend-exclusion">
                     <Fade triggerOnce cascade>
-                        <div className="font-Work-Sans flex flex-col justify-start items-start mix-blend-exclusion ">
+                        <div className="font-Work-Sans flex flex-col justify-start items-start  ">
                             <p className='font-medium'>Hey, I'm</p>
                             <p className=" text-8xl lg:text-9xl font-bold transition text-primary">Adam</p>
                             <br/>

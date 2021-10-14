@@ -4,7 +4,7 @@ export default function Words(words, prevWords, canvas, ctx) {
   if (prevWords.length > 0) {
       return [];
   }
-  return mapWords(ctx, lines,canvas.width/8, canvas.height/3)
+  return mapWords(ctx, lines,canvas.width/8, 40)
 
   function getLines(ctx, maxWidth) {
       let wordsArray = words.split(" ");
@@ -36,9 +36,9 @@ export default function Words(words, prevWords, canvas, ctx) {
               let length=ctx.measureText(" " + canvasText[i]).width;
               wordsBB.push({
                   x:accumLength+x,
-                  y:y-16 + j * 40,
+                  y:y-16 + j * 90,
                   w:length,
-                  h:16,
+                  h:60,
                   word: canvasText[i],
                   broke: false
               });

@@ -46,7 +46,7 @@ export default function Board() {
       const canvas = canvasRef.current;
       const ctx = canvas.getContext("2d");
 
-      ctx.font = "30px Work-Sans";
+      ctx.font = "900 90px Work-Sans ";
       ctx.fillStyle = "#fff";
 
       paddleProps.y = canvas.height - 30;
@@ -64,7 +64,8 @@ export default function Board() {
       for (let i = 0 ; i < words.length; i++) {
         let bb = words[i];
         if (!bb.broke) {
-          ctx.fillText(bb.word, bb.x, bb.y + 16 )
+          ctx.fillText(bb.word, bb.x, bb.y + 60 )
+          // ctx.strokeRect(bb.x, bb.y, bb.w, bb.h )
         }
       }
 
@@ -121,7 +122,7 @@ export default function Board() {
             paddleProps.width / 2 -
             10)}
          className="w-screen max-w-full relative ">
-      <p style={{bottom:'0', right:'0', position:'absolute'}} className="text-sm pr-1 pb-1">*click on my name</p>
+      <p onClick={handlePlay} style={{bottom:'0', right:'0', position:'absolute'}} className="text-sm pr-1 pb-1">*click on my name</p>
       <canvas
         id="canvas"
         ref={canvasRef}
