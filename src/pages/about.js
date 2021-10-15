@@ -78,7 +78,7 @@ const About = () => {
 
 
 
-
+    //TODO: IDK if i should make text smaller/cleaner, add resume download, make name a gradient
     return (
         <>
 
@@ -95,7 +95,7 @@ const About = () => {
                 <section  className="font-Inter py-24 pl-4 lg:pr-0 pr-4 sm:pl-16 md:pl-32 lg:pl-56 text-2xl md:text-3xl lg:text-4xl  w-screen h-screen max-w-full pointer-events-none  mix-blend-exclusion">
                     <Fade triggerOnce cascade>
                         <div className=" flex flex-col justify-start items-start  ">
-                            <p className='font-bold'>Hey, I'm</p>
+                            <p className='font-bold'>Hey 👋, I'm</p>
                             <p className=" text-8xl lg:text-9xl font-black transition text-primary">Adam</p>
                             <br/>
                         </div>
