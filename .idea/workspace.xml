@@ -2,7 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2fe6626f-93f3-4b42-9906-90671ffb04d3" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/components/Footer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/HoverableText.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Breakout/Board.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Breakout/Board.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/FadeInWhenVisible.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/marquee.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/marquee.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hooks/useIntersection.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hooks/useInterval.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hooks/useMousePosition.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/about.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/about.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/archives.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/archives.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/contact.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/contact.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/projects.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/projects.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/skills.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/skills.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/animations.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/animations.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/tailwind.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/tailwind.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tailwind.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/tailwind.config.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,7 +69,7 @@
       <workItem from="1634166504804" duration="9669000" />
       <workItem from="1634198311411" duration="37000" />
       <workItem from="1634210152798" duration="2085000" />
-      <workItem from="1634219131886" duration="8609000" />
+      <workItem from="1634219131886" duration="19782000" />
     </task>
     <servers />
   </component>

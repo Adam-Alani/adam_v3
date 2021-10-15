@@ -4,7 +4,7 @@
 
 
 .title {
-    @apply font-black text-7xl sm:text-8xl md:text-9xl
+    @apply font-black text-center text-rs sm:text-left sm:text-8xl md:text-9xl
 }
 
 

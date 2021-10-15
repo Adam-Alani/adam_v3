@@ -119,12 +119,12 @@ export default function Board() {
             event.clientX -
             paddleProps.width / 2 -
             10)}
-         className="w-screen max-w-full relative ">
-      <p  style={{bottom:'0', right:'0', position:'absolute'}} className=" font-Work-Sans pr-1 pb-1">*click anywhere</p>
+         className="w-screen max-w-full relative overflow-x-hidden ">
+      <p  style={{bottom:'0', right:'0', position:'absolute'}} className=" font-Inter font-light px-3 pb-1">*click anywhere</p>
       <canvas
         id="canvas"
         ref={canvasRef}
-        className="border-b-4 border-t-4"
+        className="border-b border-t"
         height={3*window.innerHeight/4}
         width={window.innerWidth}
       />

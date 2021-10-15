@@ -12,12 +12,13 @@ import './index.css';
 import './styles/tailwind.css';
 import './styles/animations.css';
 import './styles/fonts.css';
+import Footer from "./components/Footer";
 
 //Smooth scroll by https://www.youtube.com/watch?v=Dz6Sg630I8M
 //TODO: Random color on each visit
 function App() {
 
-    const [loading, setLoading] = useState(true);
+    const [loading, setLoading] = useState(false);
     const size = useWindowSize();
 
     // Ref for parent div and scrolling div
@@ -35,11 +36,11 @@ function App() {
     // Run scrollrender once page is loaded.
 
 
-    useEffect(() => {
-        setTimeout(() => {
-            setLoading(false);
-        }, 5000)
-    }, []);
+    // useEffect(() => {
+    //     setTimeout(() => {
+    //         setLoading(false);
+    //     }, 5000)
+    // }, []);
     //
     // useEffect(() => {
     //     requestAnimationFrame(() => skewScrolling());
@@ -91,13 +92,14 @@ function App() {
                 {/*<Nav className={`transition duration-1000 ease-in ${loading ? "hidden" : "" }`}/>*/}
                 <Home hidden={loading}/>
 
-                <div className="absolute" ref={scrollContainer}>
-                    <div className={`bg-dark transition duration-1000 ease-in  ${loading ? "hidden" : "visible block" }`} >
+                <div  ref={scrollContainer}>
+                    <div className={`bg-dark max-w-full transition duration-1000 ease-in  ${loading ? "hidden" : "visible block" }`} >
                         <About/>
                         <Projects/>
                         <Skills/>
                         <Archives/>
                         <Contact/>
+                        <Footer/>
                     </div>
                 </div>
             </div>

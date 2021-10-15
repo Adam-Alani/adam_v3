@@ -4,10 +4,35 @@ import { gsap } from "gsap";
 import Marquee from "../components/marquee";
 
 
+//Fisher-Yates Shuffle algorithm : https://stackoverflow.com/questions/2450954/how-to-randomize-shuffle-a-javascript-array
+function shuffle(array) {
+    let currentIndex = array.length,  randomIndex;
+
+    // While there remain elements to shuffle...
+    while (currentIndex != 0) {
+
+        // Pick a remaining element...
+        randomIndex = Math.floor(Math.random() * currentIndex);
+        currentIndex--;
+
+        // And swap it with the current element.
+        [array[currentIndex], array[randomIndex]] = [
+            array[randomIndex], array[currentIndex]];
+    }
+
+    return array;
+}
+
+
+const skills = ['Typescript', 'React', 'Svelte', 'Three.js', 'Golang', 'Python', 'Photoshop', 'Figma', 'Firebase', 'C', 'CSS', 'Flutter', 'Dart'];
+const skills1 = shuffle(['Typescript', 'React', 'Svelte', 'Three.js', 'Golang', 'Python', 'Photoshop', 'Figma', 'Firebase', 'C', 'CSS', 'Flutter', 'Dart']);
+const skills2 = shuffle(['Typescript', 'React', 'Svelte', 'Three.js', 'Golang', 'Python', 'Photoshop', 'Figma', 'Firebase', 'C', 'CSS', 'Flutter', 'Dart']);
+
 const Skills = () => {
 
     const animationTween = useRef(null);
     const backwardTween = useRef(null);
+
 
     const factor = 0.5;
 
@@ -24,6 +49,8 @@ const Skills = () => {
         gsap.to(backwardTween.current, {
             timeScale: -factor
         }).play();
+
+
 
         return () => {
             backwardTween.current.kill();
@@ -76,11 +103,12 @@ const Skills = () => {
 
 
 
+
     return (
-        <div className=" relative w-screen overflow-x-hidden min-h-full  max-w-full text-9xl bg-dark border-t-4 border-white pt-14 pb-16">
-            <Marquee direction={'forward'}/>
-            <Marquee direction={'backwards'}/>
-            <Marquee direction={'forward'}/>
+        <div className=" relative w-screen overflow-x-hidden min-h-full  max-w-full text-9xl bg-dark border-t border-white pt-14 pb-16">
+            <Marquee direction={'forward'} key={1} skills={skills}/>
+            <Marquee direction={'backwards'} key={2} skills={skills1}/>
+            <Marquee direction={'forward'} key={3} skills={skills2}/>
         </div>
     )
 }

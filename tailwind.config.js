@@ -16,16 +16,21 @@ module.exports = {
       'Recoleta': ['Recoleta'],
       'Rozha': ['Rozha'],
       'Work-Sans': ['Work-Sans'],
+      'Inter': ['Inter']
     },
     extend: {
       colors: {
         maybe: '#35c499',
         primary: '#ffe279',
-        dark: '#111111'
+        gray: '#232323',
+        dark: '#070707'
       },
       transitionDuration: {
         '2000': '2000ms',
-      }
+      },
+      fontSize: {
+        'rs': '15vw'
+      },
     },
   },
   variants: {

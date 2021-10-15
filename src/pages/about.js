@@ -84,22 +84,24 @@ const About = () => {
 
 
             <div className="flex flex-row bounds">
+                <div className="lg:block hidden">
                 <img src={ProfilePic} alt="Me!" className="  image behind filter brightness-200 "/>
                 <img src={ProfilePic} alt="Me!" className="  image behind filter brightness-150"/>
                 <img src={ProfilePic} alt="Me!" className="  image behind filter brightness-125"/>
                 <img src={ProfilePic} alt="Me!" className="  image behind filter brightness-125"/>
                 <img src={ProfilePic} alt="Me!" className="  image behind filter shadow-2xl brightness-110"/>
-                <img src={ProfilePic} alt="Me!" className="  image draggable shadow-xl border border-opacity-10 "/>
-                <section  className="py-24 pl-4 sm:pl-16 md:pl-32 lg:pl-56 text-4xl  w-screen h-screen max-w-full pointer-events-none  mix-blend-exclusion">
+                <img src={ProfilePic} alt="Me!" className="  image draggable shadow-xl "/>
+                </div>
+                <section  className="font-Inter py-24 pl-4 lg:pr-0 pr-4 sm:pl-16 md:pl-32 lg:pl-56 text-2xl md:text-3xl lg:text-4xl  w-screen h-screen max-w-full pointer-events-none  mix-blend-exclusion">
                     <Fade triggerOnce cascade>
-                        <div className="font-Work-Sans flex flex-col justify-start items-start  ">
-                            <p className='font-medium'>Hey, I'm</p>
-                            <p className=" text-8xl lg:text-9xl font-bold transition text-primary">Adam</p>
+                        <div className=" flex flex-col justify-start items-start  ">
+                            <p className='font-bold'>Hey, I'm</p>
+                            <p className=" text-8xl lg:text-9xl font-black transition text-primary">Adam</p>
                             <br/>
                         </div>
-                        <div className="font-Recoleta">
+                        <div className="font-extralight ">
                             <p>I'm a developer and designer based in Paris, France.</p>
-                            <p className="pt-4">Currently studying computer science and actively looking for jobs and internships</p>
+                            <p className="pt-4">Currently studying computer science and actively looking for jobs and internships.</p>
                         </div>
                     </Fade>
                 </section>

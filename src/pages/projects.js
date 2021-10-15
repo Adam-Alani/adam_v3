@@ -36,7 +36,7 @@ const Projects = () => {
         <div  className=" w-screen h-screen max-w-full bg-dark border-t-4 border-dark ">
             <div className="animate-reveal">
                 <Reveal triggerOnce delay={100} keyframes={"reveal"}>
-                    <h1 className="revealText float-right text-5xl px-8 title font-Work-Sans ">PROJECTS</h1>
+                    <h1 className="revealText sm:float-right text-5xl sm:px-8 title font-Inter ">PROJECTS</h1>
                 </Reveal>
             </div>
             <div>

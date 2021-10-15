@@ -23,7 +23,7 @@ const Archives = () => {
 
     //ref={ref} className={`transition ${inViewport ? 'fade-in' : ' '}
     return (
-        <div className="px-8 border-t-4 border-white bg-dark font-Work-Sans">
+        <div className="px-8 border-t border-white bg-dark font-Inter">
 
             <div className="animate-reveal">
                 <Reveal triggerOnce keyframes={"reveal"} delay={300}>
@@ -36,7 +36,7 @@ const Archives = () => {
                         <div className="animate-reveal">
                         <Reveal   keyframes={"reveal"}>
                             <div className="md:w-2/3 revealText">
-                                <a target="_blank" rel="noopener" href={repo.html_url}  className="py-1 border-b-2 group  border-dotted transition duration-500 ease-in-out transform flex flex-row  justify-between">
+                                <a target="_blank" rel="noopener" href={repo.html_url}  className="py-1 border-b-2 border-gray group  border-dotted transition duration-500 ease-in-out transform flex flex-row  justify-between">
                                     <div>
                                         <h1  className=" pt-2 pr-8 text-xl repo_hover ">{(repo.name)}</h1>
                                         <p className="hidden md:block pr-8 pb-2 text-sm text-gray-300 font-light repo_hover">{(repo.description)}</p>
