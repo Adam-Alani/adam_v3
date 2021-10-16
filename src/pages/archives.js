@@ -27,14 +27,14 @@ const Archives = () => {
 
             <div className="animate-reveal">
                 <Reveal triggerOnce keyframes={"reveal"} delay={300}>
-                    <h1 className=" title">ARCHIVES</h1>
+                    <h1 className="pointer-events-none title">ARCHIVES</h1>
                 </Reveal>
             </div>
             <div className="py-16">
                 {repos ? repos.map((repo, idx) => {
                     return (
                         <div className="animate-reveal">
-                        <Reveal   keyframes={"reveal"}>
+                        <Reveal keyframes={"reveal"}>
                             <div className="md:w-2/3 revealText">
                                 <a target="_blank" rel="noopener" href={repo.html_url}  className="py-1 border-b-2 border-gray group  border-dotted transition duration-500 ease-in-out transform flex flex-row  justify-between">
                                     <div>

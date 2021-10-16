@@ -31,7 +31,7 @@ const Footer = () => {
                 <div className=" border-t border-gray py-8 grid grid-cols-2 animate-reveal ">
                     <div className="animate-reveal">
                     <Reveal keyframes={"reveal"} >
-                        <h1 className="text-xs md:text-sm ">SOCIAL MEDIA</h1>
+                        <h1 className="text-xs md:text-sm pointer-events-none">SOCIAL MEDIA</h1>
                     </Reveal>
                     </div>
                     <Fade cascade>
@@ -47,7 +47,7 @@ const Footer = () => {
                <div className=" animate-reveal border-t border-gray py-8 grid grid-cols-2">
                     <div className="animate-reveal">
                         <Reveal keyframes={"reveal"} >
-                            <h1 className="text-xs md:text-sm">EMAIL</h1>
+                            <h1 className="text-xs md:text-sm pointer-events-none">EMAIL</h1>
                         </Reveal>
                     </div>
                    <Fade cascade>
@@ -58,7 +58,7 @@ const Footer = () => {
                    </Fade>
                </div>
             </div>
-            <div className="animate-reveal">
+            <div className="animate-reveal pointer-events-none">
                 <Reveal keyframes={"reveal"}>
                 <p className="text-sm  md:text-base font-light  pt-4">©adamalani</p>
                 <p>Paris, France</p>
