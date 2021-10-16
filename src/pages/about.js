@@ -62,8 +62,6 @@ const About = () => {
 
 
 
-
-
     //TODO: IDK if i should make text smaller/cleaner, add resume download, make name a gradient
     return (
         <div className="flex flex-row bounds">
