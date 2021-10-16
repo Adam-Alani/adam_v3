@@ -1,5 +1,6 @@
 import React, {useCallback, useEffect, useState} from 'react';
 import Reveal from "react-awesome-reveal";
+import Project from "../components/Project";
 
 const Projects = () => {
 
@@ -40,6 +41,10 @@ const Projects = () => {
                 </Reveal>
             </div>
             <div>
+                <Project name={"Dysto"} category={"Design and Web"} description={"Fashion branding"}/>
+                <Project name={"Afterlife"} category={"Game dev"} description={"Coding game with interpreted language"}/>
+                <Project name={"Sudetect"} category={"Software"} description={"Sudoku OCR and solver"}/>
+                <Project name={"Epiclass"} category={"Web App"} description={"School calendar"}/>
             </div>
         </div>
     )

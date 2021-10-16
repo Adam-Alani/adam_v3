@@ -97,7 +97,7 @@
 /*}*/
 
 
-
+/*From tympanus*/
 
 .hover-this {
     transition: all 0.3s ease;
@@ -122,3 +122,52 @@
 .hover-this:hover ~ .cursor {
     transform: translate(-50%, -50%) scale(4);
 }
+
+
+
+.button {
+    cursor: pointer;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    border-width: var(--button-stroke-width);
+    border-color: var(--button-stroke);
+    border-style: solid;
+    color: var(--button-text);
+    background: var(--button-bg);
+    border-radius: var(--button-border-radius);
+    min-width: 14rem;
+    height: 6rem;
+    padding: 0;
+    margin: 1rem;
+    font-family: inherit;
+    font-size: 1.5rem;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button:focus,
+.button--hover {
+    outline: none;
+}
+
+.button__filler {
+    position: absolute;
+    width: 150%;
+    height: 200%;
+    border-radius: 50%;
+    top: -50%;
+    left: -25%;
+    transform: translate3d(0,75%,0);
+}
+
+.button__text,
+.button__text-inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+

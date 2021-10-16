@@ -1,7 +1,7 @@
 import React, {useRef, useState} from "react";
 import "../styles/animations.css"
 import HoverableText from "./HoverableText";
-import Reveal from "react-awesome-reveal";
+import Reveal, {Fade} from "react-awesome-reveal";
 
 
 const Footer = () => {
@@ -34,12 +34,15 @@ const Footer = () => {
                         <h1 className="text-xs md:text-sm ">SOCIAL MEDIA</h1>
                     </Reveal>
                     </div>
+                    <Fade cascade>
                     <div onMouseMove={(e) => {editCursor(e, cursor)}}  className="flex flex-col lg:pl-16">
                         <HoverableText key={1} text={"Github"} cursor={cursor}/>
                         <HoverableText key={2} text={"LinkedIn"} cursor={cursor}/>
                         <HoverableText key={3} text={"Twitter"} cursor={cursor}/>
                         <div ref={cursor} className="cursor transition"/>
                     </div>
+                    </Fade>
+
                 </div>
                <div className=" animate-reveal border-t border-gray py-8 grid grid-cols-2">
                     <div className="animate-reveal">
@@ -47,11 +50,13 @@ const Footer = () => {
                             <h1 className="text-xs md:text-sm">EMAIL</h1>
                         </Reveal>
                     </div>
-                    <div onMouseMove={(e) => {editCursor(e, cursor2)}} className="lg:pl-16">
-                        <HoverableText key={3} text={"adamalany@gmail.com"} cursor={cursor2}/>
-                        <div ref={cursor2} className="cursor transition"/>
-                    </div>
-                </div>
+                   <Fade cascade>
+                       <div onMouseMove={(e) => {editCursor(e, cursor2)}} className="lg:pl-16">
+                            <HoverableText key={4} text={"adamalany@gmail.com"} cursor={cursor2}/>
+                            <div ref={cursor2} className="cursor transition"/>
+                        </div>
+                   </Fade>
+               </div>
             </div>
             <div className="animate-reveal">
                 <Reveal keyframes={"reveal"}>
