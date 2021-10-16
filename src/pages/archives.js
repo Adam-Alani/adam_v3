@@ -1,7 +1,7 @@
-import React, {createRef, useEffect, useRef, useState} from "react";
+import React, {useEffect, useState} from "react";
 import getRepositories from "../utils/github";
 import "../styles/animations.css"
-import Reveal, {Fade} from "react-awesome-reveal";
+import Reveal from "react-awesome-reveal";
 
 
 const Archives = () => {
@@ -33,10 +33,10 @@ const Archives = () => {
             <div className="py-16">
                 {repos ? repos.map((repo, idx) => {
                     return (
-                        <div className="animate-reveal">
+                        <div key={idx} className="animate-reveal">
                         <Reveal keyframes={"reveal"}>
                             <div className="md:w-2/3 revealText">
-                                <a target="_blank" rel="noopener" href={repo.html_url}  className="py-1 border-b-2 border-gray group  border-dotted transition duration-500 ease-in-out transform flex flex-row  justify-between">
+                                <a target="_blank" rel="noreferrer" href={repo.html_url}  className="py-1 border-b-2 border-gray group  border-dotted transition duration-500 ease-in-out transform flex flex-row  justify-between">
                                     <div>
                                         <h1  className="pt-1 pr-8 font-light capitalize sm:text-xl repo_hover  ">{(repo.name)}</h1>
                                         <p className="hidden md:block pr-8 pb-2 text-sm text-gray-300 font-light repo_hover">{(repo.description)}</p>

@@ -1,5 +1,5 @@
 import * as THREE from 'three'
-import {useEffect, useLayoutEffect, useMemo, useRef, useState} from 'react'
+import {useEffect, useRef} from 'react'
 import { useGLTF } from '@react-three/drei'
 import {useFrame, useLoader, useThree} from "@react-three/fiber";
 import {GLTFLoader} from "three/examples/jsm/loaders/GLTFLoader";
@@ -10,9 +10,10 @@ import {useCompoundBody, usePlane, useSphere} from "@react-three/cannon";
 useGLTF.preload("/3dObjects/logo3.glb")
 
 export function Logo() {
+
     const sphereMaterial = new THREE.MeshLambertMaterial({ color: "#797979"})
     const ref = useRef()
-    const { nodes, materials } = useGLTF("/3dObjects/logo3.glb")
+    const { nodes } = useLoader(GLTFLoader,"/3dObjects/logo3.glb")
     useFrame((state) => {
         const t = state.clock.getElapsedTime()
 
@@ -34,7 +35,7 @@ export function Logo() {
 
 
 const sphereMaterial = new THREE.MeshLambertMaterial({ color: "#ff7b00"})
-const sphereGeometry = new THREE.SphereGeometry(1, 24, 24)
+const sphereGeometry = new THREE.SphereGeometry(1, 21, 21)
 export function Spheres({ vec = new THREE.Vector3(), ...props }) {
     const [ref, api] = useCompoundBody(() => ({
         ...props,

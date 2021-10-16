@@ -1,4 +1,4 @@
-import React, {useEffect, useRef, useState} from "react";
+import React, {useEffect, useRef} from "react";
 import { BallMovement } from "./BallMovement";
 import data from "./data";
 import WallCollision from "./util/WallCollision";
@@ -7,7 +7,6 @@ import Words from "./Words";
 import BrickCollision from "./util/BrickCollision";
 import PaddleHit from "./util/PaddleHit";
 import AllBroken from "./util/AllBroke";
-import ResetBall from "./util/ResetBall";
 import useWindowSize from "../../hooks/useWindowSize";
 
 let words = [];
@@ -44,7 +43,7 @@ export default function Board() {
       const canvas = canvasRef.current;
       const ctx = canvas.getContext("2d");
 
-      ctx.font = "900 90px Work-Sans ";
+      ctx.font = "900 90px Inter ";
       ctx.fillStyle = "#fff";
 
       paddleProps.y = canvas.height - 30;

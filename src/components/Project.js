@@ -1,6 +1,4 @@
-import Reveal from "react-awesome-reveal";
 import React, {useRef} from "react";
-import {getMousePos} from "../utils/utils";
 import {gsap} from "gsap";
 
 let oldy = 0;

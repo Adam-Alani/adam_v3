@@ -15,7 +15,6 @@ module.exports = {
       'Rakkas': ['Rakkas'],
       'Recoleta': ['Recoleta'],
       'Rozha': ['Rozha'],
-      'Work-Sans': ['Work-Sans'],
       'Inter': ['Inter']
     },
     extend: {

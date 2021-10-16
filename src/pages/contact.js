@@ -1,5 +1,4 @@
 import React from "react";
-import Breakout from "../components/Breakout";
 import Board from "../components/Breakout/Board";
 
 const Contact = () => {

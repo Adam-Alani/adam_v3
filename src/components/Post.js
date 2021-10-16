@@ -1,6 +1,6 @@
 import { useMemo, useEffect } from "react"
 import { useThree, useFrame } from "@react-three/fiber"
-import { BlendFunction, EffectComposer, EffectPass, RenderPass, SSAOEffect, NormalPass, BloomEffect } from "postprocessing"
+import { BlendFunction, EffectComposer, EffectPass, RenderPass, SSAOEffect, NormalPass } from "postprocessing"
 
 export default function Post() {
     const { gl, scene, camera, size } = useThree()
@@ -37,7 +37,7 @@ export default function Post() {
         return composer
     }, [])
 
-    useEffect(() => void composer.setSize(size.width, size.height), [size])
+    useEffect(() => void composer.setSize(size.width, size.height), [size, composer])
     return useFrame((_, delta) => composer.render(delta), 1)
 }
 

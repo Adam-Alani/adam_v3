@@ -1,4 +1,4 @@
-import React, {useRef, useState} from "react";
+import React, {useRef} from "react";
 import "../styles/animations.css"
 import HoverableText from "./HoverableText";
 import Reveal, {Fade} from "react-awesome-reveal";

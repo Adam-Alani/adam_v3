@@ -2,7 +2,33 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2fe6626f-93f3-4b42-9906-90671ffb04d3" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adamsbridge.hdr" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/3D.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/3D.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Breakout/Board.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Breakout/Board.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Breakout/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Footer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Footer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/HoverableText.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/HoverableText.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Post.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Post.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Project.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Project.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/marquee.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/marquee.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/nav.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fonts/WorkSans-Bold.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fonts/WorkSans-ExtraBold.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fonts/WorkSans-ExtraLight.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fonts/WorkSans-Light.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fonts/WorkSans-Medium.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/about.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/about.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/archives.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/archives.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/contact.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/contact.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/home.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/home.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/projects.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/projects.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/skills.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/skills.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/fonts.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/fonts.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/tailwind.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/tailwind.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/utils.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/utils.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tailwind.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/tailwind.config.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,7 +92,8 @@
       <workItem from="1634388200215" duration="2748000" />
       <workItem from="1634394647548" duration="10593000" />
       <workItem from="1634408806330" duration="10000" />
-      <workItem from="1634409854796" duration="191000" />
+      <workItem from="1634409854796" duration="1389000" />
+      <workItem from="1634419599285" duration="4516000" />
     </task>
     <servers />
   </component>
