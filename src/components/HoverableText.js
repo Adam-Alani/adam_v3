@@ -22,7 +22,7 @@ const HoverableText = ({text, cursor, url}) => {
 
 
     return (
-        <a href="#" onMouseMove={hoverHandler} onMouseLeave={leave} className="  hover-this w-min"><span className=" w-min hovered-text" ref={span}>{text}</span></a>
+        <a href="#" onMouseMove={hoverHandler} onMouseLeave={leave} className="   "><span className="  " ref={span}>{text}</span></a>
     )
 }
 

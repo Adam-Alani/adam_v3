@@ -92,7 +92,7 @@ const About = () => {
                 <img src={ProfilePic} alt="Me!" className="  image behind filter shadow-2xl brightness-110"/>
                 <img src={ProfilePic} alt="Me!" className="  image draggable shadow-xl "/>
                 </div>
-                <section  className="font-Inter py-24 pl-4 lg:pr-0 pr-4 sm:pl-16 md:pl-32 lg:pl-56 text-2xl md:text-3xl lg:text-4xl  w-screen h-screen max-w-full pointer-events-none  mix-blend-exclusion">
+                <section  className="font-Inter py-24 pl-8 pr-8 lg:pr-0  sm:pl-16 md:pl-32 lg:pl-56 text-2xl md:text-3xl lg:text-4xl  w-screen h-screen max-w-full pointer-events-none  mix-blend-exclusion">
                     <Fade triggerOnce cascade>
                         <div className=" flex flex-col justify-start items-start  ">
                             <p className='font-bold'>Hey 👋, I'm</p>
