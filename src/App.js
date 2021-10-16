@@ -90,7 +90,7 @@ function App() {
         { loading && <div ><LoadingAnimation /></div>}
             <div  className={`transition duration-2000 ${loading ? "opacity-0" : "opacity-100" }`}>
                 {/*<Nav className={`transition duration-1000 ease-in ${loading ? "hidden" : "" }`}/>*/}
-                <Home hidden={loading}/>
+                {/*<Home hidden={loading}/>*/}
 
                 <div  ref={scrollContainer}>
                     <div className={`bg-dark max-w-full transition duration-1000 ease-in  ${loading ? "hidden" : "visible block" }`} >
