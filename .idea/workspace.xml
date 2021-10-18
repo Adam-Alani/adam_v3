@@ -2,33 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2fe6626f-93f3-4b42-9906-90671ffb04d3" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/assets/adamalani.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/dysto.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/dysto2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/sudetekt.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/trader.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/ProjectOverview.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/adamsbridge.hdr" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/3D.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/3D.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Breakout/Board.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Breakout/Board.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Breakout/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Footer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Footer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/HoverableText.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/HoverableText.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Post.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Post.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Project.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Project.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/marquee.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/marquee.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/nav.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fonts/WorkSans-Bold.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fonts/WorkSans-ExtraBold.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fonts/WorkSans-ExtraLight.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fonts/WorkSans-Light.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fonts/WorkSans-Medium.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/about.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/about.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/archives.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/archives.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/contact.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/contact.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/home.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/home.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/projects.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/projects.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/skills.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/skills.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/fonts.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/fonts.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/tailwind.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/tailwind.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/utils.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/utils.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tailwind.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/tailwind.config.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,12 +45,15 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/assets" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="ts.external.directory.path" value="C:\Users\Adam\AppData\Local\JetBrains\Toolbox\apps\WebStorm\ch-0\211.6693.108\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\xatom\VSCodeProjects\adam_v3\src\assets" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\xatom\VSCodeProjects\adam_v3\src\assets" />
     </key>
@@ -93,7 +78,9 @@
       <workItem from="1634394647548" duration="10593000" />
       <workItem from="1634408806330" duration="10000" />
       <workItem from="1634409854796" duration="1389000" />
-      <workItem from="1634419599285" duration="4516000" />
+      <workItem from="1634419599285" duration="5255000" />
+      <workItem from="1634429237735" duration="1950000" />
+      <workItem from="1634479009893" duration="4334000" />
     </task>
     <servers />
   </component>
