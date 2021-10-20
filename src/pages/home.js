@@ -11,7 +11,6 @@ useGLTF.preload('/3dObjects/logo.glb')
 const spheres = [...Array(35)].map(() => ({ args: [0.6, 0.6, 0.8, 0.8, 1][Math.floor(Math.random() * 5)], mass: 1, angularDamping: 0.2, linearDamping: 0.95 }))
 
 
-
 const Home = () => {
 
     return (
@@ -55,8 +54,6 @@ const Home = () => {
                             <Collisions />
                             {spheres.map((props, i) => <Spheres key={i} {...props} />) /* prettier-ignore */}
                         </Physics>
-
-                        {/*<Model/>*/}
 
                         <Logo/>
                         <ContactShadows frames={1} rotation-x={[Math.PI / 2]} position={[0, -0.33, 0]} far={0.4} width={2} height={2} blur={4} />

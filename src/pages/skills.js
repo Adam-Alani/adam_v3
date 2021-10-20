@@ -107,8 +107,6 @@ const Skills = () => {
     return (
         <div className=" relative w-screen overflow-x-hidden min-h-full max-w-full text-9xl bg-dark pt-14 pb-16">
             <Marquee direction={'forward'} key={1} skills={skills}/>
-            <Marquee direction={'backwards'} key={2} skills={skills1}/>
-            <Marquee direction={'forward'} key={3} skills={skills2}/>
         </div>
     )
 }

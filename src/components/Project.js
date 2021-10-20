@@ -1,9 +1,10 @@
 import React, {useRef} from "react";
 import {gsap} from "gsap";
 import {Slide} from "react-awesome-reveal";
+import {Link} from "react-router-dom";
 
 let oldy = 0;
-const Project = ({name, category, description, img}) => {
+const Project = ({name, category, description, img,detailed}) => {
 
     const filler = useRef();
     const inner = useRef();
@@ -95,6 +96,16 @@ const Project = ({name, category, description, img}) => {
     }
     //TODO: bring img outside component for overlapping elements
     return (
+        <Link to={{
+            pathname: `/projects/${name}`,
+            state: {
+                name,
+                category,
+                description,
+                img,
+                detailed
+            },
+        }}>
         <div className="relative">
             <img ref={imgRef} src={img} style={{left:"35%", top:"50%"}} className=" pointer-events-none w-56 opacity-0 z-50 shadow" alt={name}/>
             <Slide>
@@ -112,8 +123,8 @@ const Project = ({name, category, description, img}) => {
             </div>
             <hr style={{zIndex:-50}} className="border-gray"/>
             </Slide>
-
         </div>
+        </Link>
 
     )
 }

@@ -41,73 +41,78 @@ export default function Board() {
   useEffect(() => {
     const render = () => {
       const canvas = canvasRef.current;
-      const ctx = canvas.getContext("2d");
+      if (canvas) {
+        const ctx = canvas.getContext("2d");
 
-      ctx.font = "900 90px Inter ";
-      ctx.fillStyle = "#fff";
+        ctx.font = "900 90px Inter ";
+        ctx.fillStyle = "#fff";
 
-      paddleProps.y = canvas.height - 30;
-      ctx.clearRect(0, 0, canvas.width, canvas.height);
+        paddleProps.y = canvas.height - 30;
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
 
-      // Assign and draw Words
-      let newBrickSet = Words(about.content, words, canvas, ctx);
+        // Assign and draw Words
+        let newBrickSet = Words(about.content, words, canvas, ctx);
 
 
-      //TODO:
-      if (newBrickSet && newBrickSet.length > 0) {
-        words = newBrickSet;
-      }
-
-      for (let i = 0 ; i < words.length; i++) {
-        let bb = words[i];
-        if (!bb.broke) {
-          ctx.fillText(bb.word, bb.x, bb.y + 60 )
-          // ctx.strokeRect(bb.x, bb.y, bb.w, bb.h )
+        //TODO:
+        if (newBrickSet && newBrickSet.length > 0) {
+          words = newBrickSet;
         }
-      }
 
-
-      // Handle Ball Movement
-      BallMovement(ctx, ballObj, playing);
-
-
-
-      // Check all broken
-
-      //TODO: Score counter and finish congratulations
-      AllBroken(words, canvas, ballObj);
-
-
-      // Ball and Wall Collision
-      let alive = WallCollision(ballObj, canvas, paddleProps, playing);
-      if (!alive) {
-        resetGame();
-      }
-
-
-      // Words Collision
-      let wordCollision;
-
-      for (let i = 0; i < words.length; i++) {
-        wordCollision = BrickCollision(ballObj, words[i]);
-
-        if (wordCollision.hit && !words[i].broke) {
-          // console.log(brickCollision);
-          if (wordCollision.axis === "X") {
-            ballObj.dx *= -1;
-            words[i].broke = true;
-          } else if (wordCollision.axis === "Y") {
-            ballObj.dy *= -1;
-            words[i].broke = true;
+        for (let i = 0 ; i < words.length; i++) {
+          let bb = words[i];
+          if (!bb.broke) {
+            ctx.fillText(bb.word, bb.x, bb.y + 60 )
+            // ctx.strokeRect(bb.x, bb.y, bb.w, bb.h )
           }
         }
+
+
+        // Handle Ball Movement
+        BallMovement(ctx, ballObj, playing);
+
+
+
+        // Check all broken
+
+        //TODO: Score counter and finish congratulations
+        if (AllBroken(words, canvas, ballObj)) {
+          resetGame();
+        }
+
+
+        // Ball and Wall Collision
+        let alive = WallCollision(ballObj, canvas, paddleProps, playing);
+        if (!alive) {
+          resetGame();
+        }
+
+
+        // Words Collision
+        let wordCollision;
+
+        for (let i = 0; i < words.length; i++) {
+          wordCollision = BrickCollision(ballObj, words[i]);
+
+          if (wordCollision.hit && !words[i].broke) {
+            // console.log(brickCollision);
+            if (wordCollision.axis === "X") {
+              ballObj.dx *= -1;
+              words[i].broke = true;
+            } else if (wordCollision.axis === "Y") {
+              ballObj.dy *= -1;
+              words[i].broke = true;
+            }
+          }
+        }
+        Paddle(ctx, canvas, paddleProps);
+
+        // Paddle + Ball Collision
+        PaddleHit(ballObj, paddleProps);
+
+        requestAnimationFrame(render);
+
       }
-      Paddle(ctx, canvas, paddleProps);
-
-      // Paddle + Ball Collision
-      PaddleHit(ballObj, paddleProps);
-
-      requestAnimationFrame(render);
     };
     render();
   }, []);

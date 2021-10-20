@@ -12,7 +12,7 @@ export default function AllBroken(bricks, canvas, ballObj) {
     }
   }
   if (total === bricks.length) {
-    ResetBall(ballObj, canvas, paddleProps);
-    brickObj.y = 50;
+    return true
   }
+  return false;
 }

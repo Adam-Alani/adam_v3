@@ -18,9 +18,9 @@ const Projects = () => {
                 </Reveal>
             </div>
             <div className="py-8 relative" >
-                <Project img={Dysto} key={0} name={"Dysto"} category={"Design and Web"} description={"Fashion branding"}/>
-                <Project img={Adam} key={3} name={"adamalani.me"} category={"Web dev"} description={"Personal portfolio"}/>
-                <Project img={Sudetekt} key={2} name={"Sudetect"} category={"Software"} description={"Sudoku OCR and solver"}/>
+                <Project img={Dysto} key={0} name={"Dysto"} category={"Design and Web"} description={"Fashion branding"} detailed={"Worked on the design and the development of Dysto, an upcoming fashion brand. Built on Firebase and React"}/>
+                <Project img={Adam} key={3} name={"adamalani"} category={"Web dev"} description={"Personal portfolio"} detailed={"My old portfolio, made with Three.js, Svelte and alot of colors."}/>
+                <Project img={Sudetekt} key={2} name={"Sudetect"} category={"Software"} description={"Sudoku OCR and solver"} detailed={"Latest school project, Optical character recognition and sudoku solver software, built with C and GTK."}/>
                 {/*<Project  key={1} name={"Afterlife"} category={"Game dev"} description={"Coding game with interpreted language"}/>*/}
                 {/*<Project img={Epiclass} key={3} name={"Epiclass"} category={"Web App"} description={"School calendar"}/>*/}
             </div>
