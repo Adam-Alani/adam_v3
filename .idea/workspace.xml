@@ -3,19 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="2fe6626f-93f3-4b42-9906-90671ffb04d3" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Breakout/Board.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Breakout/Board.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Breakout/util/AllBroke.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Breakout/util/AllBroke.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Breakout/util/WallCollision.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Breakout/util/WallCollision.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Project.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Project.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/ProjectOverview.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ProjectOverview.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/projects.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/projects.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/skills.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/skills.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,6 +75,7 @@
       <workItem from="1634429237735" duration="1950000" />
       <workItem from="1634479009893" duration="4334000" />
       <workItem from="1634687340246" duration="4318000" />
+      <workItem from="1634854601671" duration="306000" />
     </task>
     <servers />
   </component>
