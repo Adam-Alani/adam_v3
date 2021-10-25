@@ -36,9 +36,9 @@ const Footer = () => {
                     </div>
                     <Fade cascade>
                     <div onMouseMove={(e) => {editCursor(e, cursor)}}  className="flex flex-col lg:pl-16">
-                        <HoverableText key={1} text={"Github"} cursor={cursor}/>
-                        <HoverableText key={2} text={"LinkedIn"} cursor={cursor}/>
-                        <HoverableText key={3} text={"Twitter"} cursor={cursor}/>
+                        <HoverableText key={1} text={"Github"} cursor={cursor} url={"https://github.com/Adam-Alani"}/>
+                        <HoverableText key={2} text={"LinkedIn"} cursor={cursor} url={"https://www.linkedin.com/in/adam-alani-8a164b1b0/"}/>
+                        <HoverableText key={3} text={"Twitter"} cursor={cursor} url={"https://twitter.com/unebrosseadam"} />
                         <div ref={cursor} className="cursor transition"/>
                     </div>
                     </Fade>
@@ -52,7 +52,7 @@ const Footer = () => {
                     </div>
                    <Fade cascade>
                        <div onMouseMove={(e) => {editCursor(e, cursor2)}} className="lg:pl-16">
-                            <HoverableText key={4} text={"adamalany@gmail.com"} cursor={cursor2}/>
+                            <HoverableText key={4} text={"adamalany@gmail.com"} cursor={cursor2} url={"mailto:adamalany@gmail.com"}/>
                             <div ref={cursor2} className="cursor transition"/>
                         </div>
                    </Fade>
