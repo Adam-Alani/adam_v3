@@ -6,6 +6,7 @@ import Dysto from "../assets/dysto.png";
 import Adam from "../assets/adamalani.png";
 import Sudetekt from "../assets/sudetekt.png";
 import Trader from "../assets/trader.png";
+import Restauck from "../assets/restauck.png";
 import {gsap} from "gsap";
 
 const Projects = () => {
@@ -24,6 +25,7 @@ const Projects = () => {
                 <Project img={Sudetekt} key={2} name={"Sudetect"} category={"Software"} description={"Sudoku OCR and solver"} detailed={"Latest school project, Optical character recognition and sudoku solver software, built with C and GTK."}/>
                 <Project img={Epiclass} key={3} name={"Epiclass"} category={"Web App"} description={"School calendar"} detailed={"Quick personal project to replace my schools outdated calendar system"}/>
                 <Project img={Trader} key={3} name={"GoTrade"} category={"Software"} description={"Crypto trader"} detailed={"Fun summer project, cryptocurrency trader built with Go and Flutter with a 80%+ profit percentage during bear markets "}/>
+                <Project img={Restauck} key={4} name={"Restauck"} category={"Hackathon project built over a weekend using Firebase and React. Restaurant and independent commerces supply management system with customer advantages for discounts and more. We got to the finals in the hackathon. "}/>
             </div>
         </div>
     )

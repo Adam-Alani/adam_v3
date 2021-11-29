@@ -19,7 +19,7 @@ const ProjectOverview = () => {
 
     return (
         <div className=" w-screen h-screen max-h-full max-w-full text-white bg-dark ">
-            <div className="md:inline-flex justify-between bg-dark ">
+            <div className="lg:inline-flex justify-between bg-dark ">
                 <div className=" md:w-1/3 px-8 py-8 font-Inter">
                     <div className="flex flex-col items-start">
                         <h2 className=" font-bold opacity-60">{state.category}</h2>
@@ -29,7 +29,7 @@ const ProjectOverview = () => {
                         <p className="font">{state.detailed}</p>
                     </div>
                 </div>
-                <div className=" md:w-2/3 ">
+                <div className=" lg:w-2/3 ">
                     <img className="object-contain relative " src={state.img} alt={state.name}/>
                 </div>
             </div>
