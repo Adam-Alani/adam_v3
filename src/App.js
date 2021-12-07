@@ -17,7 +17,7 @@ import RedirectTo from "./components/RedirectTo";
 
 function App() {
 
-    const [loading, setLoading] = useState(false);
+    const [loading, setLoading] = useState(true);
 
     useEffect(() => {
         setTimeout(() => {
