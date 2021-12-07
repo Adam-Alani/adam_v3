@@ -13,10 +13,11 @@ import Footer from "./components/Footer";
 import Skills from "./pages/skills";
 import {Route, Switch} from "react-router";
 import ProjectOverview from "./components/ProjectOverview";
+import RedirectTo from "./components/RedirectTo";
 
 function App() {
 
-    const [loading, setLoading] = useState(true);
+    const [loading, setLoading] = useState(false);
 
     useEffect(() => {
         setTimeout(() => {
@@ -47,6 +48,9 @@ function App() {
                 </Route>
                 <Route path="/projects/:name">
                     <ProjectOverview/>
+                </Route>
+                <Route exact path="/make-me-rich-bitch">
+                    <RedirectTo link={"https://paypal.me/makeadamrichagain?country.x=FR&locale.x=fr_FR"}/>
                 </Route>
             </Switch>
         </>
