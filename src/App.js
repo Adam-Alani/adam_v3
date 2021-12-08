@@ -34,7 +34,7 @@ function App() {
                         <div className={`transition duration-2000 ${loading ? "opacity-0" : "opacity-100" }`}>
                             <Home hidden={loading}/>
                             <div>
-                                <div className={`bg-dark max-w-full transition duration-1000 ease-in  ${loading ? "hidden" : "visible block" }`} >
+                                <div className={`bg-dark max-w-full transition duration-1000 ease-in  ${loading ? "invisible" : "visible" }`} >
                                     <About/>
                                     <Projects/>
                                     <Skills/>

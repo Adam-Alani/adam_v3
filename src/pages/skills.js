@@ -32,9 +32,9 @@ const skills = ['React', 'Three.js', 'Golang', 'Python', 'Firebase', 'C', 'CSS',
 const Skills = () => {
 
     const marqueeRef = useRef(null);
+    gsap.registerPlugin(ScrollTrigger)
 
     useEffect(() => {
-        gsap.registerPlugin(ScrollTrigger)
         gsap.to(".forward", {
             x: -500,
             duration: 2.5,
