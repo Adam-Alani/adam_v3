@@ -41,25 +41,6 @@ img {
 }
 
 
-.marquee__part {
-    flex-shrink: 0;
-    padding: 0 4px;
-}
-
-.marquee {
-    padding: 32px 0;
-
-    position: relative;
-    overflow: hidden;
-}
-
-.marquee__inner {
-    -webkit-font-smoothing: antialiased;
-    width: fit-content;
-    display: flex;
-    flex: auto;
-    flex-direction: row;
-}
 
 
 ::-webkit-scrollbar {
