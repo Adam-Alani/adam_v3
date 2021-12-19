@@ -11,13 +11,13 @@ useGLTF.preload('/3dObjects/logo.glb')
 const spheres = [...Array(35)].map(() => ({ args: [0.6, 0.6, 0.8, 0.8, 1][Math.floor(Math.random() * 5)], mass: 1, angularDamping: 0.2, linearDamping: 0.95 }))
 
 
-const Home = () => {
+const Home = ({color}) => {
 
     return (
         <>
             <div className="hidden sm:block">
-                <div className="absolute inset-0 w-full h-full pointer-events-none bg-primary">
-                    <div className="w-full h-screen font-Work-Sans font-black   flex flex-col items-center leading-none tracking-widest justify-center">
+                <div className={`absolute inset-0 w-full h-full pointer-events-none ${color.style}`}>
+                    <div className="w-full h-screen font-Work-Sans font-black flex flex-col items-center leading-none tracking-widest justify-center">
                         <Fade triggerOnce delay={6000} cascade>
                             <h1 className={`transition  text-dark`} style={{fontSize: "22vw",fontFamily: "Inter"}}>Adam</h1>
                             <h1 className={`transition  text-dark`} style={{fontSize: "22vw",fontFamily: "Inter"}}>Alani.</h1>
@@ -52,7 +52,7 @@ const Home = () => {
 
                         <Physics gravity={[0, 0, 0]} iterations={1} broadphase="SAP">
                             <Collisions />
-                            {spheres.map((props, i) => <Spheres key={i} {...props} />) /* prettier-ignore */}
+                            {spheres.map((props, i) => <Spheres color={color} key={i} {...props} />) /* prettier-ignore */}
                         </Physics>
 
                         <Logo/>

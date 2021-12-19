@@ -8,7 +8,7 @@ import useWindowSize from "../hooks/useWindowSize";
 
 
 
-const About = () => {
+const About = ({color}) => {
 
     const size = useWindowSize()
 
@@ -77,7 +77,7 @@ const About = () => {
                 <Fade triggerOnce cascade>
                     <div className=" flex flex-col justify-start items-start  ">
                         <p className='font-bold'>Hey 👋, I'm</p>
-                        <p className=" text-8xl lg:text-9xl font-black transition text-primary">Adam</p>
+                        <p className={` text-8xl lg:text-9xl font-black transition ${color.text}`}>Adam</p>
                         <br/>
                     </div>
                     <div className="font-extralight ">

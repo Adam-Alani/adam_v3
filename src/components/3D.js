@@ -34,15 +34,16 @@ export function Logo() {
 }
 
 
-const sphereMaterial = new THREE.MeshLambertMaterial({ color: "#ff7b00"})
 const sphereGeometry = new THREE.SphereGeometry(1, 21, 21)
-export function Spheres({ vec = new THREE.Vector3(), ...props }) {
+export function Spheres({ vec = new THREE.Vector3(), color, ...props }) {
     const [ref, api] = useCompoundBody(() => ({
         ...props,
         shapes: [
             { type: "Sphere", args: props.args },
         ],
     }))
+    const sphereMaterial = new THREE.MeshLambertMaterial({ color: color.color})
+
     useEffect(() => api.position.subscribe((p) => api.applyForce(vec.set(...p).normalize().multiplyScalar(-props.args * 35).toArray(), [0, 15, 0])), [api]) // prettier-ignore
     return (
         <group ref={ref} dispose={null}>

@@ -28,7 +28,7 @@ export default function Post() {
             radius: 7,
             intensity: 30,
             luminanceInfluence: 0.6,
-            color: "#ff7700",
+            color: "#b6b6b6",
         })
         const effectPass = new EffectPass(camera, CAO, AO, )
         effectPass.renderToScreen = true

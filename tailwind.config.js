@@ -19,7 +19,12 @@ module.exports = {
     },
     extend: {
       colors: {
-        maybe: '#35c499',
+        rYellow: '#ffe279',
+        rDGreen: '#93f861',
+        rGreen: '#4ae3b4',
+        rPurple: '#a48df5',
+        rBlue: '#8dd6f5',
+        rRed: '#f58d8d',
         primary: '#ffe279',
         gray: '#232323',
         dark: '#070707'
