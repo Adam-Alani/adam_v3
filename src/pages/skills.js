@@ -25,7 +25,7 @@ import Marquee from "../components/marquee";
 // }
 
 
-const skills = ['React', 'Three.js', 'Golang', 'Python', 'Firebase', 'C', 'CSS', 'Flutter', 'Dart' , 'Photoshop', 'Figma'];
+const skills = ['Three.js', 'React', 'Golang', 'Python', 'Rust', 'C', 'CSS', 'Flutter', 'Dart' , 'Photoshop', 'Figma'];
 // const skills1 = shuffle(['Typescript', 'React', 'Svelte', 'Three.js', 'Golang', 'Python', 'Photoshop', 'Figma', 'Firebase', 'C', 'CSS', 'Flutter', 'Dart']);
 // const skills2 = shuffle(['Typescript', 'React', 'Svelte', 'Three.js', 'Golang', 'Python', 'Photoshop', 'Figma', 'Firebase', 'C', 'CSS', 'Flutter', 'Dart']);
 
