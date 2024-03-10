@@ -1,2 +1,2 @@
 website, yet another one
-https://www.adamalani.me/
+https://www.adamalani.com/
